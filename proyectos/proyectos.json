@@ -1,0 +1,26 @@
+[
+  {
+    "logo": "resources/acoru/logo.png",
+    "nombre": "Acoru",
+    "anio": "2024",
+    "autores": ["Pedro Padro", "José Chavez", "Mario Moreno", "Mauricio Betancourt"],
+    "tecnologias": ["SwiftUI", "ML", "C#", "CoreML"],
+    "descripcion": "Acoru es tu asistente integral para la gestión sostenible: registra cada etapa de la plantación, sugiere métodos de generación de energía limpia adaptados a tu entorno y te alerta tempranamente ante riesgos climáticos o desastres naturales. Con su módulo de realidad aumentada, coloca turbinas eólicas, paneles solares o sistemas de riego en 3D directamente sobre el terreno a través de la cámara de tu dispositivo, para que visualices cómo encajan antes de invertir. Todo en una sola app intuitiva, conectada a datos meteorológicos en tiempo real y analítica inteligente para decisiones más verdes y seguras.",
+    "capturas": [
+      "resources/acoru/captura1.png",
+      "resources/acoru/captura2.png"
+    ]
+  },
+  {
+    "logo": "resources/otro/logo.png",
+    "nombre": "Otro Proyecto",
+    "anio": "2023",
+    "autores": ["Autor 1", "Autor 2"],
+    "tecnologias": ["Swift", "UIKit"],
+    "descripcion": "Descripción del otro proyecto.",
+    "capturas": [
+        "resources/proyectos/captura3.png",
+        "resources/proyectos/captura4.png"
+        ]
+    }
+]
