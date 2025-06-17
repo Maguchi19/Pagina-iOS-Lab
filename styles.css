@@ -1,0 +1,749 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.menu-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.menu-dropdown {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu-dropdown a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-dropdown a:hover {
+  background-color: #f24c00;
+  color: white;
+}
+
+.menu-hidden {
+  display: none;
+}
+
+.link {
+  color: #f97232; /* azul claro */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #fd3023; /* azul más brillante al pasar el mouse */
+}
+
+/* Pagina principal */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('resources/background.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.logo-swift {
+  position: absolute;
+  top: 170px;
+  left: 90px;
+  height: 460px;
+}
+
+.logo-banner {
+  position: absolute;
+  top: 75px;
+  right: 40px;
+  height: 90px;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: local('SF Pro Display'), local('SF Pro'), local('San Francisco');
+  font-weight: lighter;
+}
+
+.lab-text {
+  position: absolute;
+  top: 150px;
+  right: 400px;
+  text-align: left;
+  color: white;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.lab-text h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.lab-text h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.words {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  left: 60%;
+  transform: translateX(-45%);
+  top: 60px;
+}
+
+.center-word {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+}
+
+.animated-word {
+  position: absolute;
+  top: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.word-left {
+  font-size: 2.9rem;
+  right: 50%;
+  transform: translateX(-135px);
+  text-align: right;
+}
+
+.word-right {
+  font-size: 2.9rem;
+  left: 50%;
+  transform: translateX(132px);
+  text-align: left;
+}
+
+
+/* Sección Conocenos */
+
+.about {
+  background: linear-gradient(to right, #003366 0%, #003366 40%, #0066D4 100%);
+  padding: 80px 60px;
+  color: white;
+  min-height: 100vh;
+}
+
+.about-title {
+  color: #d4b012;
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  background-color: #f0f0f5;
+  color: #00264d;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 500px;
+  font-size: 2.0rem;
+  line-height: 1.5;
+}
+
+.about-video {
+  flex: 1;
+  min-width: 400px;
+  max-width: 800px;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  background: black;
+  border: 4px solid #d4b012;
+}
+
+
+/* Sección Servicios */
+
+.services {
+  background: url('resources/servicios/background.png') center/cover no-repeat;
+  padding: 80px 60px;
+  color: white;
+  min-height: 100vh;
+}
+
+.services-title {
+  font-size: 3.2rem;
+  color: #fca311;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.service-card {
+  background: #1a1a1a;
+  color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.service-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.service-info p {
+  margin: 0 0 5px;
+  font-size: 1rem;
+}
+
+.service-info span {
+  font-size: 0.9rem;
+  color: #fca311;
+}
+
+/* Sección Actividades */
+.activities {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff 50%, #f24c00 50%);
+  padding: 80px 60px;
+  min-height: 100vh;
+}
+
+.activities-title {
+  font-size: 3.2rem;
+  color: #f24c00;
+  margin-bottom: 40px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.activities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.activity-card {
+  background: #1a1a1a;
+  color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+}
+
+.activity-image {
+  height: 180px;
+  background: gray;
+  background-size: cover;
+  background-position: center;
+}
+
+.activity-info {
+  padding: 20px;
+}
+
+.activity-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.activity-info p {
+  margin: 0 0 5px;
+  font-size: 1rem;
+}
+
+.activity-info span {
+  font-size: 0.9rem;
+  color: #f9d423;
+  display: block;
+  text-align: right;
+}
+
+.activity-expanded {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+  padding: 0 15px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.activity-card.expanded .activity-expanded,
+.service-card.expanded .activity-expanded {
+  max-height: 200px;
+  padding: 15px;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* ------------------ SECCIÓN HORARIOS ------------------ */
+.horario-section {
+  background: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-11/q73DjRMSND.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* Contenedor general centrado */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contenedor flex de las tarjetas */
+.horario-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* ------------------ TARJETAS BASE ------------------ */
+.card {
+  flex: 1 1 45%;
+  max-width: 500px;
+  padding: 40px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* fondo oscuro translúcido */
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Contacto alineado a la izquierda */
+.card.contacto {
+  text-align: left;
+}
+
+/* Horario centrado */
+.card.horario {
+  text-align: center;
+}
+
+/* ------------------ CONTENIDO INTERNO ------------------ */
+.card h2 {
+  font-size: 80px;
+  margin-bottom: 0;
+}
+
+.linea {
+  width: 80px;
+  height: 6px;
+  background-color: #fca311;
+  margin: 16px auto 24px;
+  border-radius: 3px;
+}
+
+.card p {
+  font-size: 26px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+
+.card a.link {
+  color: #fca311;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.card a.link:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ SECCIÓN HORARIOS ------------------ */
+.horario-section {
+  background: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-06-11/q73DjRMSND.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 60px 20px;
+}
+
+/* Contenedor general centrado */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contenedor flex de las tarjetas */
+.horario-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* ------------------ TARJETAS BASE ------------------ */
+.card {
+  flex: 1 1 45%;
+  max-width: 500px;
+  padding: 40px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Contacto alineado a la izquierda */
+.card.contacto {
+  text-align: left;
+}
+
+/* Horario centrado */
+.card.horario {
+  text-align: center;
+}
+
+/* ------------------ CONTENIDO INTERNO ------------------ */
+.card h2 {
+  font-size: 60px;
+  /* Reducido un poco */
+  margin-bottom: 0;
+}
+
+.linea {
+  width: 80px;
+  height: 6px;
+  background-color: #fca311;
+  margin: 16px auto 24px;
+  border-radius: 3px;
+}
+
+.card p {
+  font-size: 20px;
+  /* Antes: 26px */
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+.card a.link {
+  color: #fca311;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  /* Antes: 26px */
+}
+
+.card a.link:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ TABLA DE HORARIOS ------------------ */
+.card.horario table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 12px;
+  margin-top: 30px;
+  font-size: 18px;
+  
+}
+
+.card.horario th,
+.card.horario td {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 16px 24px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.card.horario th {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+}
+
+/* ------------------ FOOTER CON LOGO ------------------ */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.footer img {
+  width: 120px;
+  /* modificar tamaño pequeño */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer span {
+  display: block;
+  font-size: 48px;
+  /*modificar tamaño más pequeño */
+  font-weight: 800;
+  color: #fca311;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* Animación flotante */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 768px) {
+  .logo-swift {
+    top: 60px;
+    left: 20px;
+    max-width: 40%;
+    height: auto;
+  }
+
+  .logo-banner {
+    top: 20px;
+    right: 20px;
+    height: 60px;
+  }
+
+  .lab-text {
+    top: 140px;
+    left: 180px;
+    right: auto;
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .lab-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .lab-text h2 {
+    font-size: 2rem;
+  }
+
+  .words {
+    flex-direction: column;
+    align-items: flex-start;
+    top: 250px;
+    left: 180px;
+    transform: none;
+    gap: 10px;
+  }
+
+  .word-left,
+  .word-right {
+    position: static;
+    transform: none;
+    text-align: left;
+  }
+
+  .center-word {
+    font-size: 2.4rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    max-width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .about-video {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .services-grid,
+  .activities-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card,
+  .activity-card {
+    width: 90%;
+  }
+
+  .menu-toggle {
+    top: 10px;
+    left: 10px;
+  }
+
+  .menu-button {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .activities {
+    background: #ffffff;
+  }
+
+  .activities-title,
+  .services-title,
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .footer span {
+    font-size: 24px;
+  }
+
+  .footer img {
+    width: 70px;
+  }
+
+  .horario-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .card h2 {
+    font-size: 40px;
+  }
+
+  .card p,
+  .card a.link,
+  .card.horario table {
+    font-size: 18px;
+  }
+}
+
+
+    .horario-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+
+    .horario-container .card {
+      flex: 1 1 500px;
+      max-width: 600px;
+    }
+/* Créditos Footer */
+.creditos-footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+  margin-top: 60px;
+  border-radius: 12px;
+}
+
+.creditos-footer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #fca311;
+}
+
+.creditos-footer .linea {
+  margin: 0 auto 24px;
+}
+
+.creditos-footer p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}

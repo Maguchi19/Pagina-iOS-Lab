@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS Development Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="menu-toggle">
+    <div class="menu-button" onclick="toggleMenu()">☰ Menú</div>
+    <div id="menu-list" class="menu-hidden menu-dropdown">
+      <a href="#hero">Inicio</a>
+      <a href="#about">Conócenos</a>
+      <a href="#services">Servicios</a>
+      <a href="#activities">Actividades</a>
+      <a href="#horario-section">Contacto</a>
+      <a href="#creditos">Créditos</a>
+    </div>
+  </nav>
+  <div class="hero" id="hero">
+    <img src="resources/swift-logo.png" alt="Swift Logo" class="logo-swift">
+    <img src="resources/unach-banner.png" alt="UNACH Banner" class="logo-banner">
+    <div class="lab-text">
+      <h1>iOS</h1>
+      <h2>Development Lab</h2>
+    </div>
+    <div class="words">
+      <div class="animated-word word-left" id="word-start">Imagina</div>
+      <div class="center-word">Programa</div>
+      <div class="animated-word word-right" id="word-end">Transforma</div>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <h2 class="about-title">Conócenos</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          El iOS Development Lab es un Laboratorio de Desarrollo de aplicaciones móviles para iOS, abierto para alumnos y colaboradores que quieran aprender a desarrollar en Swift o que tengan alguna idea / proyecto que quieran desarrollar.
+        </p>
+      </div>
+      <div id="about-video" class="about-video">
+        <video width="100%" height="100%" controls muted autoplay playsinline>
+          <source src="resources/iOSLabFacNegocios.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services" id="services">
+    <h2 class="services-title">Servicios</h2>
+    <div class="services-grid" style="align-items: flex-start;">
+      <div class="service-card expandible-card" onclick="toggleExpand(this)">
+        <div class="service-image" style="background-image: url('resources/servicios/curso.png');"></div>
+        <div class="service-info">
+          <h3>Curso</h3>
+          <p>Desarrollo en Swift Fundamentals.</p>
+          <span>Disponible a fin de semestre</span>
+        </div>
+        <div class="activity-expanded">
+          <span>URL:</span>
+          <p>
+            <a href="https://www.curso-fundamentos.unach.mx" target="_blank" class="link">
+              https://www.curso-fundamentos.unach.mx
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-image" style="background-image: url('resources/servicios/asesoramiento.png');"></div>
+        <div class="service-info">
+          <h3>Asesoría</h3>
+          <p>Te ayudamos a resolver dudas sobre desarrollo en iOS.</p>
+          <span>Disponible todo el semestre</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-image" style="background-image: url('resources/servicios/prestamo.png');"></div>
+        <div class="service-info">
+          <h3>Préstamo de equipo</h3>
+          <p>Acceso a dispositivos para desarrollar tus apps.</p>
+          <span>Con credencial de estudiante</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="activities" id="activities">
+  <h2 class="activities-title">Actividades</h2>
+  <div class="activities-grid">
+    <div class="activity-card" onclick="toggleExpand(this)">
+      <div class="activity-image" style="background-image: url('resources/actividades/CursoFundamentos.jpg');"></div>
+      <div class="activity-info">
+        <h3>Curso</h3>
+        <p>Fundamentos de programación en Swift</p>
+        <span>Junio 2025</span>
+      </div>
+      <div class="activity-expanded">
+        <p><a href="actividades/actividades.html?id=curso-swift" class="link">Ver más</a></p>
+      </div>
+    </div>
+   
+    <div class="activity-card" onclick="toggleExpand(this)">
+      <div class="activity-image" style="background-image: url('resources/actividades/TriunfoHackaton2025.jpg');"></div>
+      <div class="activity-info">
+        <h3>Hackathon 2025</h3>
+        <p>Estudiantes de la UNACH ganan hackathon 2025</p>
+        <span>Mayo 2025</span>
+      </div>
+      <div class="activity-expanded">
+        <p><a href="actividades/actividades.html?id=hackaton-2025" class="link">Ver más</a></p>
+      </div>
+     </div>
+     <div class="activity-card" onclick="toggleExpand(this)">
+      <div class="activity-image" style="background-image: url('resources/actividades/Changemaker.jpg');"></div>
+      <div class="activity-info">
+        <h3>Del sueño a la innovación</h3>
+        <p>El viaje de una Changemaker en el Swift Student Challenge</p>
+        <span>Mayo 2025</span>
+      </div>
+      <div class="activity-expanded">
+        <p><a href="actividades/actividades.html?id=curso-swift" class="link">Ver más</a></p>
+      </div>
+     </div>
+      
+  </div>
+</section>
+<section class="horario-section" id="horario-section">
+  <div class="container">
+    <div class="horario-container">
+
+      <!-- Tarjeta de Contacto -->
+      <div class="card contacto">
+        <h2>Contacto</h2>
+        <div class="linea"></div>
+        <p><strong>Estamos ubicades en el IQS Development Lab planta baja del edificio P. Conjunto sur. Facultad de
+            Ingeniería UNAM.</strong></p>
+        <p>Facebook: <a href="#" class="link">@OSLabFi</a></p>
+        <p>Instagram: <a href="#" class="link">@tadl.atni</a></p>
+        <p>Correo: <a href="mailto:ioslab@ingenieria.unach.mx" class="link">ioslab@ingenieria.unam.mx</a></p>
+      </div>
+
+      <!-- Tarjeta de Horario -->
+      <div class="card horario">
+        <h2>Horario</h2>
+        <p>Puedes visitarnos en los siguientes horarios.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes a Viernes</td>
+              <td>09:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td>Sábados</td>
+              <td>10:00 – 14:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+ 
+      <!-- Sección de Créditos -->
+      <div class="creditos-footer" id="creditos">
+        <h2>Créditos</h2>
+        <div class="linea"></div>
+        <p>Desarrollado por: <strong>Mauricio Betancourt Mora y Santos Abelino Oxlaj Juarez</strong> </p>
+        <p>Estudiantes de la carrera en Ingeniería y Desarrollo de Software </p>
+        <p>Manager de Proyecto: <strong>Dr. Christian Mauricio Castillo Estrada</strong> </p>
+        <p><strong>Universidad Autónoma de Chiapas</strong></p>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+  <script src="script.js"></script>
+</body>
+</html>

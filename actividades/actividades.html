@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Noticia Detalle</title>
+  <link rel="stylesheet" href="StyleActividades.css" />
+
+</head>
+<body>
+  <div class="noticia-header">
+    <a href="../index.html">←</a>
+    <span class="noticia-titulo-estatico">Actividades</span>
+    <img src="resources/header.png" alt="icono" class="noticia-icono" />
+  </div>
+  <div class="noticia-body">
+    <h1 id="titulo-noticia"></h1>
+    <div class="linea-noticia"></div>
+    <div class="noticia-galeria" id="galeria-imagenes"></div>
+    <div class="noticia-fecha" id="fecha-noticia"></div>
+    <div class="noticia-contenido" id="contenido-noticia"></div>
+  </div>
+<!-- Modal para mostrar imágenes -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <button class="modal-nav prev">&#10094;</button>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <button class="modal-nav next">&#10095;</button>
+            <div class="image-counter">
+                <span id="currentImageIndex">1</span> / <span id="totalImages">4</span>
+            </div>
+        </div>
+    </div>
+<script src="actividades.js"></script>
+</body>
+</html>

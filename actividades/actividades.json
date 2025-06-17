@@ -1,0 +1,27 @@
+[
+  {
+    "id": "curso-swift",
+    "titulo": "Fundamentos de programación en Swift",
+    "fecha": "Junio 2025",
+    "imagenes": [
+      "resources/FundamentosSwift/imagen.jpg",
+      "resources/FundamentosSwift/imagen2.jpg",
+      "resources/FundamentosSwift/imagen3.jpg",
+      "resources/FundamentosSwift/imagen4.jpg"
+    ],
+    "noticia": "El Laboratorio de Desarrollo iOS en colaboración con la Academia de Ingeniería de Software y tratamiento de información de la Facultad de Negocios Campus de la UNACH, organizaron el curso-taller denominado 'Fundamentos de programación en Swift', con la valiosa asistencia de personas estudiantes de los tres primeros semestres del programa educativo de LIDTS; quienes mostraron un gran interés por aprender los conceptos básicos de este lenguaje programación, elemento clave para iniciar con el desarrollo de aplicaciones móviles iOS; este curso fue realizado del 2 al 6 de junio de 2025 como parte de los cursos de verano extracurriculares de la unidad académica. La inauguración de este evento fue realizada por el Dr. Gilibaldo Hernández Cruz, Director de la Facultad de Negocios, Dr. Christian Mauricio Castillo Estrada, iOS Development Lab Manager, Mtro. Rene Servando Rivera, Coordinador de LIDTS y la Mtra. Rosa Isela López Aguilar, Profesora integrante de la Academia."
+  }
+    ,
+    {
+        "id": "hackaton-2025",
+        "titulo": "Estudiantes de la UNACH triunfan en evento nacional Hackathon 2025",
+        "fecha": "Mayo 2025",
+        "imagenes": [
+        "resources/hackaton-2025/imagen1.jpg",
+        "resources/hackaton-2025/imagen2.jpg",
+        "resources/hackaton-2025/imagen3.jpg",
+        "resources/hackaton-2025/imagen4.jpg"
+        ],
+        "noticia": "Los días 12, 13 y 14 de mayo de 2025, se realizó la competencia académica nacional denominada “Swift Changemakers Hackathon 2025” organizado por la fundación Enactus México, una competencia que reúne a talentosos y destacados programadores estudiantes de diversas instituciones de educación superior públicas y privadas del país, quienes se enfrentaron a diversos desafíos orientados a diseñar prototipos y soluciones innovadoras utilizando la tecnología Swift, aplicando conocimientos en programación funcional y orientado a objetos, diseño de interfaces de usuario, experiencia de usuario, y la aplicación de técnicas avanzadas de ingeniería de software; así también, habilidades blandas tales como: trabajo en equipo, gestión del tiempo, liderazgo, pensamiento crítico y comunicación."
+    }
+]
