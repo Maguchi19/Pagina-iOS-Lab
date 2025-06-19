@@ -12,15 +12,15 @@
     ]
   },
   {
-    "logo": "resources/otro/logo.png",
-    "nombre": "Otro Proyecto",
-    "anio": "2023",
-    "autores": ["Autor 1", "Autor 2"],
-    "tecnologias": ["Swift", "UIKit"],
-    "descripcion": "Descripción del otro proyecto.",
+    "logo": "resources/MixUp/logo.jpeg",
+    "nombre": "MixUp",
+    "anio": "2021",
+    "autores": ["José María Padilla Fernández"],
+    "tecnologias": ["SwiftUI", "Playgorunds App", "Adobe Ilustrator"],
+    "descripcion": " La principal funcionalidad/mecánica que tiene el juego es el uso de la creatividad mediante el uso de DragGestures para la mezcla de elementos y asi crear nuevos para llegar al objetivo de cada nivel.",
     "capturas": [
-        "resources/proyectos/captura3.png",
-        "resources/proyectos/captura4.png"
+        "resources/MixUp/captura1.jpeg",
+        "resources/MixUp/captura2.jpeg"
         ]
     }
 ]

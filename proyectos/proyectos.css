@@ -21,60 +21,110 @@
 
 .proyecto-info {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 16px;
   align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .left-section {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 250px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "logo info"
+    "descripcion descripcion";
+  column-gap: 40px;
+  row-gap: 20px;
+  align-items: start;
+  flex: 1 1 60%;
+}
+
+.proyecto-logo {
+  grid-area: logo;
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  align-self: flex-start;
 }
 
 .text-col {
+  grid-area: info;
   flex: 2;
   min-width: 250px;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .text-col strong {
   color: black;
 }
 
-.capturas-col {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.proyecto-logo {
-  width: 230px;
-  height: 230px;
-  object-fit: contain;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  align-self: flex-start;
-}
-
-.captura {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-  border: 8px solid black;
-  background: black;
-}
-
 .descripcion {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  grid-area: descripcion;
   font-size: 22px;
   line-height: 1.4;
   text-align: justify;
-  min-width: 700px;
+  max-width: 100%;
+  
+  align-self: flex-start;
+}
+
+.capturas-col {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 250px;
+  max-width: 100%;
+}
+
+/* Layout específico para pantallas grandes */
+.capturas-col.vertical-layout {
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.capturas-col.horizontal-layout {
+  flex-direction: column;
+}
+
+/* Comportamiento automático basado en aspect ratio */
+.capturas-col:has(.captura[style*="aspect-ratio"][style*="< 1"]) {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.captura {
+  border-radius: 20px;
+  border: 8px solid black;
+  background: black;
+  object-fit: contain;
+  /* Tamaño base para imágenes horizontales (una arriba de otra) */
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Estilo para imágenes verticales (una al lado de otra) */
+.captura.vertical {
+  width: 48%;
+  min-width: 180px;
+  max-width: 250px;
+}
+
+/* Contenedor que se adapta automáticamente - MOVIDO ARRIBA */
+.capturas-col.horizontal-layout {
+  flex-direction: column;
+}
+
+.capturas-col.vertical-layout {
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-start;
 }
 
 .header {
@@ -176,7 +226,6 @@
   .descripcion {
     min-width: unset;
     font-size: 18px;
-    
   }
   
   .proyecto-logo {
@@ -185,13 +234,20 @@
     align-self: center;
   }
   
-  .capturas-col {
+  /* En tablets, mantener imágenes verticales lado a lado */
+  .capturas-col.vertical-layout {
     flex-direction: row;
     gap: 10px;
   }
   
   .captura {
     max-width: 300px;
+  }
+  
+  .captura.vertical {
+    width: 48%;
+    min-width: 140px;
+    max-width: 200px;
   }
   
   .header {
@@ -240,12 +296,18 @@
     line-height: 1.5;
   }
   
-  .capturas-col {
+  /* En móviles, todas las imágenes van en columna */
+  .capturas-col,
+  .capturas-col.vertical-layout {
     flex-direction: column;
+    gap: 16px;
   }
   
-  .captura {
+  .captura,
+  .captura.vertical {
+    width: 100%;
     max-width: 100%;
+    min-width: unset;
     border: 4px solid black;
   }
   
