@@ -12,15 +12,51 @@
     ]
   },
   {
-    "logo": "resources/MixUp/logo.jpeg",
-    "nombre": "MixUp",
+    "logo": "resources/Mixin'Up/logo.png",
+    "nombre": "Mixin'Up",
+    "anio": "2020",
+    "autores": ["José María Padilla Fernández"],
+    "tecnologias": ["SwiftUI", "Playgorunds App"],
+    "descripcion": "La principal funcionalidad/mecánica que tiene el juego es el uso de la creatividad mediante el uso de DragGestures para la mezcla de elementos y asi crear nuevos para llegar al objetivo de cada nivel.",
+    "capturas": [
+        "resources/Mixin'Up/captura1.png",
+        "resources/Mixin'Up/captura2.png"
+    ]
+  },
+  {
+    "logo": "resources/Matzu/logo.png",
+    "nombre": "Matzu",
+    "anio": "2021",
+    "autores": ["Emilia Zuñiga Losada"],
+    "tecnologias": ["SwiftUI"],
+    "descripcion": "App educativa que tiene el objetivo de ser una herramienta de acompañamiento en el aprendizaje de ecuaciones de primer y segundo grado, utilizando una metodología de ejercicios y por niveles.",
+    "capturas": [
+      "resources/Matzu/captura1.png",
+      "resources/Matzu/captura2.png"
+    ]
+  },
+  {
+    "logo": "resources/Mixin'UP2/logo.png",
+    "nombre": "Mixin'UP2",
     "anio": "2021",
     "autores": ["José María Padilla Fernández"],
     "tecnologias": ["SwiftUI", "Playgorunds App", "Adobe Ilustrator"],
-    "descripcion": " La principal funcionalidad/mecánica que tiene el juego es el uso de la creatividad mediante el uso de DragGestures para la mezcla de elementos y asi crear nuevos para llegar al objetivo de cada nivel.",
+    "descripcion": " Mixin’UP 2 surge como una idea de mejorar mi primera aplicación. La principal funcionalidad/mecánica que tiene el juego es el uso de la creatividad mediante el uso de DragGestures para la mezcla de elementos y asi crear nuevos para llegar al objetivo de cada nivel.",
     "capturas": [
-        "resources/MixUp/captura1.jpeg",
-        "resources/MixUp/captura2.jpeg"
+        "resources/Mixin'UP2/captura1.jpeg",
+        "resources/Mixin'UP2/captura2.jpeg"
         ]
-    }
+    }, 
+  {
+    "logo": "resources/HealtyMind/logo.png",
+    "nombre": "HealtyMind",
+    "anio": "2022",
+    "autores": ["Emilia Zuñiga Losada", "Eduardo Solórzano"],
+    "tecnologias": ["SwiftUI", "CoreData", "MapKit"],
+    "descripcion": "HealtyMind es una app diseñada para ser una herramienta de acompañamiento y de soporte para la salud mental, dando recomendaciones y consejos, así como registrar los estados de ánimo.",
+    "capturas": [
+        "resources/HealtyMind/captura1.png",
+        "resources/HealtyMind/video.mp4"
+    ]
+  }
 ]

@@ -52,3 +52,17 @@ function toggleMenu() {
       { threshold: 0.5 }
     );
     observer.observe(document.querySelector('#about-video'));
+
+document.querySelectorAll('.menu-dropdown a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('menu-list').classList.add('menu-hidden');
+    document.getElementById('menu-list').classList.remove('menu-visible');
+
+    // Oculta también el enlace de proyectos si está activo
+    const proyectosLink = document.getElementById('proyectos-link');
+    if (proyectosLink) {
+      proyectosLink.classList.add('menu-hidden');
+      proyectosLink.classList.remove('menu-visible');
+    }
+  });
+});
