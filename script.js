@@ -1,7 +1,15 @@
 function toggleMenu() {
-      const menu = document.getElementById('menu-list');
-      menu.classList.toggle('menu-hidden');
-    }
+      const menuList = document.getElementById('menu-list');
+  const proyectosLink = document.getElementById('proyectos-link');
+  
+  // Toggle del menú principal
+  menuList.classList.toggle('menu-hidden');
+  menuList.classList.toggle('menu-visible');
+  
+  // Toggle del enlace de proyectos
+  proyectosLink.classList.toggle('menu-hidden');
+  proyectosLink.classList.toggle('menu-visible');
+}
     const startWords = ['Imagina', 'Diseña', 'Crea', 'Desarrolla', 'Construye', 'Innova', 'Inspira'];
     const endWords = ['Transforma', 'Impacta', 'Lidera', 'Revoluciona', 'Conecta', 'Evoluciona', 'Descubre'];
     let index = 0;
@@ -44,3 +52,17 @@ function toggleMenu() {
       { threshold: 0.5 }
     );
     observer.observe(document.querySelector('#about-video'));
+
+document.querySelectorAll('.menu-dropdown a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('menu-list').classList.add('menu-hidden');
+    document.getElementById('menu-list').classList.remove('menu-visible');
+
+    // Oculta también el enlace de proyectos si está activo
+    const proyectosLink = document.getElementById('proyectos-link');
+    if (proyectosLink) {
+      proyectosLink.classList.add('menu-hidden');
+      proyectosLink.classList.remove('menu-visible');
+    }
+  });
+});

@@ -12,15 +12,63 @@
     ]
   },
   {
-    "logo": "resources/otro/logo.png",
-    "nombre": "Otro Proyecto",
-    "anio": "2023",
-    "autores": ["Autor 1", "Autor 2"],
-    "tecnologias": ["Swift", "UIKit"],
-    "descripcion": "Descripción del otro proyecto.",
+    "logo": "resources/Mixin'Up/logo.png",
+    "nombre": "Mixin'Up",
+    "anio": "2020",
+    "autores": ["José María Padilla Fernández"],
+    "tecnologias": ["SwiftUI", "Playgorunds App"],
+    "descripcion": "La principal funcionalidad/mecánica que tiene el juego es el uso de la creatividad mediante el uso de DragGestures para la mezcla de elementos y asi crear nuevos para llegar al objetivo de cada nivel.",
     "capturas": [
-        "resources/proyectos/captura3.png",
-        "resources/proyectos/captura4.png"
+        "resources/Mixin'Up/captura1.png",
+        "resources/Mixin'Up/captura2.png"
+    ]
+  },
+  {
+    "logo": "resources/Matzu/logo.png",
+    "nombre": "Matzu",
+    "anio": "2021",
+    "autores": ["Emilia Zuñiga Losada"],
+    "tecnologias": ["SwiftUI"],
+    "descripcion": "App educativa que tiene el objetivo de ser una herramienta de acompañamiento en el aprendizaje de ecuaciones de primer y segundo grado, utilizando una metodología de ejercicios y por niveles.",
+    "capturas": [
+      "resources/Matzu/captura1.png",
+      "resources/Matzu/captura2.png"
+    ]
+  },
+  {
+    "logo": "resources/Mixin'UP2/logo.png",
+    "nombre": "Mixin'UP2",
+    "anio": "2021",
+    "autores": ["José María Padilla Fernández"],
+    "tecnologias": ["SwiftUI", "Playgorunds App", "Adobe Ilustrator"],
+    "descripcion": " Mixin’UP 2 surge como una idea de mejorar mi primera aplicación. La principal funcionalidad/mecánica que tiene el juego es el uso de la creatividad mediante el uso de DragGestures para la mezcla de elementos y asi crear nuevos para llegar al objetivo de cada nivel.",
+    "capturas": [
+        "resources/Mixin'UP2/captura1.jpeg",
+        "resources/Mixin'UP2/captura2.jpeg"
         ]
-    }
+    }, 
+  {
+    "logo": "resources/HealtyMind/logo.png",
+    "nombre": "HealtyMind",
+    "anio": "2022",
+    "autores": ["Emilia Zuñiga Losada", "Eduardo Solórzano"],
+    "tecnologias": ["SwiftUI", "CoreData", "MapKit"],
+    "descripcion": "HealtyMind es una app diseñada para ser una herramienta de acompañamiento y de soporte para la salud mental, dando recomendaciones y consejos, así como registrar los estados de ánimo.",
+    "capturas": [
+        "resources/HealtyMind/captura1.png",
+        "resources/HealtyMind/video.mp4"
+    ]
+  },
+  {
+    "logo": "resources/Raiva/logo.png",
+    "nombre": "Raiva",
+    "anio": "2025",
+    "autores": ["Johana Meliza Aguilar Gonzalez", "Jesús Eduardo Ortega Armenta", "Carlos Daniel Mejía Figueroa"],
+    "tecnologias": ["SwiftUI", "ARKit", "RealityKit", "Vision", "Firebase"],
+    "descripcion": "Raiva es una app que visibiliza y celebra la riqueza cultural de los pueblos originarios de Chiapas. Busca generar conversaciones significativas sobre la raza a través de tres funciones: \n 1.-Foro: Espacio donde personas de pueblos originarios comparten. 2.-Infórmate: Información interactiva de 8 etnias de Chiapas con modelos 3D y audios. 3.-Juguemos: Minijuego basado en el “Palo Ensebado” para reforzar el aprendizaje.",
+    "capturas": [
+        "resources/Raiva/captura1.png",
+        "resources/Raiva/captura2.png"
+    ]
+  }
 ]

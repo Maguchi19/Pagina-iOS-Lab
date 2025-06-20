@@ -41,7 +41,7 @@ fetch("actividades.json")
     console.error('Error cargando la noticia:', error);
   });
 
-// FUNCIONES DEL MODAL (agregar después de tu lógica existente)
+// FUNCIONES DEL MODAL 
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const closeBtn = document.querySelector('.close');

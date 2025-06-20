@@ -9,13 +9,20 @@
 <body>
   <nav class="menu-toggle">
     <div class="menu-button" onclick="toggleMenu()">☰ Menú</div>
+    
+    <!-- Enlace de Proyectos separado que aparece al lado -->
+    <a href="proyectos/proyectos.html" id="proyectos-link" class="proyectos-side-link menu-hidden">
+      Proyectos
+    </a>
+    
+    <!-- Menú principal sin Proyectos -->
     <div id="menu-list" class="menu-hidden menu-dropdown">
-      <a href="#hero">Inicio</a>
-      <a href="#about">Conócenos</a>
-      <a href="#services">Servicios</a>
-      <a href="#activities">Actividades</a>
-      <a href="#horario-section">Contacto</a>
-      <a href="#creditos">Créditos</a>
+      <a href="#hero"><img src="resources/icons/inicio.svg" class="menu-icon"> Inicio</a>
+      <a href="#about"><img src="resources/icons/conocenos.svg" class="menu-icon"> Conócenos</a>
+      <a href="#services"><img src="resources/icons/servicios.svg" class="menu-icon"> Servicios</a>
+      <a href="#activities"><img src="resources/icons/actividades.svg" class="menu-icon"> Actividades</a>
+      <a href="#horario-section"><img src="resources/icons/contacto.svg" class="menu-icon"> Contacto</a>
+      <a href="#creditos"><img src="resources/icons/creditos.svg" class="menu-icon"> Créditos</a>
     </div>
   </nav>
   <div class="hero" id="hero">
@@ -137,11 +144,10 @@
       <div class="card contacto">
         <h2>Contacto</h2>
         <div class="linea"></div>
-        <p><strong>Estamos ubicades en el IQS Development Lab planta baja del edificio P. Conjunto sur. Facultad de
-            Ingeniería UNAM.</strong></p>
+        <p><strong>Estamos ubicades en el IOS Development Lab planta baja del edificio 4. Facultad de Negocios, Campus IV, Tapachula, Chiapas</strong></p>
         <p>Facebook: <a href="#" class="link">@OSLabFi</a></p>
         <p>Instagram: <a href="#" class="link">@tadl.atni</a></p>
-        <p>Correo: <a href="mailto:ioslab@ingenieria.unach.mx" class="link">ioslab@ingenieria.unam.mx</a></p>
+        <p>Correo: <a href="mailto:ioslab@ingenieria.unach.mx" class="link">ioslab@ingenieria.unach.mx</a></p>
       </div>
 
       <!-- Tarjeta de Horario -->
