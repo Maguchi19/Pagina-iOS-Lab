@@ -58,5 +58,17 @@
         "resources/HealtyMind/captura1.png",
         "resources/HealtyMind/video.mp4"
     ]
+  },
+  {
+    "logo": "resources/Raiva/logo.png",
+    "nombre": "Raiva",
+    "anio": "2025",
+    "autores": ["Johana Meliza Aguilar Gonzalez", "Jesús Eduardo Ortega Armenta", "Carlos Daniel Mejía Figueroa"],
+    "tecnologias": ["SwiftUI", "ARKit", "RealityKit", "Vision", "Firebase"],
+    "descripcion": "Raiva es una app que visibiliza y celebra la riqueza cultural de los pueblos originarios de Chiapas. Busca generar conversaciones significativas sobre la raza a través de tres funciones: \n 1.-Foro: Espacio donde personas de pueblos originarios comparten. 2.-Infórmate: Información interactiva de 8 etnias de Chiapas con modelos 3D y audios. 3.-Juguemos: Minijuego basado en el “Palo Ensebado” para reforzar el aprendizaje.",
+    "capturas": [
+        "resources/Raiva/captura1.png",
+        "resources/Raiva/captura2.png"
+    ]
   }
 ]
