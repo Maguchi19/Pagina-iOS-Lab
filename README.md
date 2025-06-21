@@ -52,5 +52,4 @@ To get in touch with the iOS Development Lab, please visit us at our physical lo
 
 ---
 
-*(Self-note: Consider adding a "How to Contribute" section if students can submit their projects or updates for the website via a specific process, and a "License" section if the university or lab has a standard license for such projects.)*
 ```
