@@ -1,8 +1,6 @@
 ```markdown
 # iOS Development Lab - Universidad Autónoma de Chiapas
 
-![Lab Logo](./resources/swift-logo.png)
-
 Welcome to the informational webpage for the iOS Development Lab at the Universidad Autónoma de Chiapas (UNACH). This page serves as a central hub for information about our lab, the services we provide, recent news, and a showcase of projects developed by our talented students.
 
 ## About the Lab
